@@ -197,3 +197,22 @@ a {
 }
 
 	/* End header */
+
+
+/* search-bar */
+#search-bar{
+	display:flex;
+	min-height: 10vh;
+}
+.form-inline{
+	align-items: center;
+	display:inline-block;
+	justify-content: center;
+}
+.form-control{
+	margin-top: 4PX;
+	height: 200%;
+	border-color: aqua;
+	width: 200%;
+}
+/* //search-bar */
