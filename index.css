@@ -262,7 +262,7 @@ transition: 0.5s ease;
 .cool-class{
 position:relative;
 padding: 5px;
-background-image: linear-gradient(rgba(46, 156, 31, 0.4),rgba(46, 156, 31, 0.4)), url(/PROJECT/IMG/Captur1.PNG);
+background-image: url(/PROJECT/IMG/bg\ img.jpg);
 background-size: cover;
 }
 .cool-class::after{
