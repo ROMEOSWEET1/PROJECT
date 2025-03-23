@@ -9,10 +9,11 @@ html {
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
 }
+/* container start */
 a {
 	text-decoration: none;
 }
-/* container start */
+
 .container {
 	min-height: 10vh;
 	width: 100%;
@@ -20,8 +21,6 @@ a {
 	align-items: center;
 	justify-content: center;
 }
-/*// container end */
-
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
@@ -261,6 +260,10 @@ transition: 0.5s ease;
 
 .cool-class{
 position:relative;
+width: 100%;
+margin-top: 4rem;
+margin: 37px 62px;
+/* height: 100%; */
 padding: 5px;
 background-image: url(/PROJECT/IMG/bg\ img.jpg);
 background-size: cover;
