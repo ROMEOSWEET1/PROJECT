@@ -12,6 +12,7 @@ html {
 a {
 	text-decoration: none;
 }
+/* container start */
 .container {
 	min-height: 10vh;
 	width: 100%;
@@ -19,6 +20,7 @@ a {
 	align-items: center;
 	justify-content: center;
 }
+/*// container end */
 
 .brand h1 {
 	font-size: 3rem;
@@ -28,6 +30,7 @@ a {
 .brand h1 span {
 	color: crimson;
 }
+/* container end */
 
 /* Header section */
 #header {
@@ -182,8 +185,7 @@ a {
 		height: auto;
 		width: fit-content;
 		background-color: transparent;
-}
-	
+  }
 
 	#header .nav-list ul li {
 		display: inline-block;
@@ -201,18 +203,73 @@ a {
 
 /* search-bar */
 #search-bar{
+	margin-top: 4rem;
 	display:flex;
 	min-height: 10vh;
-}
-.form-inline{
-	align-items: center;
-	display:inline-block;
 	justify-content: center;
+	align-items: center;
 }
+
 .form-control{
-	margin-top: 4PX;
-	height: 200%;
+	display:inline-block;
+	height: 6rem;
 	border-color: aqua;
-	width: 200%;
+	width: 40rem;
+}
+
+.form-control:hover{
+	color: black;
+	transition:0.5s ease;
+	background-color:palegreen;
+}
+
+.btn{
+	height: 6rem;
+	
+	border-color: aqua;
+	width: 08rem;
+}
+.btn:hover{
+	background-color: palegreen;
+transition: 0.5s ease;
 }
 /* //search-bar */
+
+/* Media Query For Tablet */
+
+@media  (min-width: 768px){
+	
+	.form-control{
+		width: 60rem;
+		height: 6rem;
+	
+	}
+}
+
+/* //Media Query For Tablet */
+
+
+ /* grain-bar  */
+ #pro-service{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	
+} 
+
+
+
+.cool-class{
+position:relative;
+padding: 5px;
+background-image: linear-gradient(rgba(46, 156, 31, 0.4),rgba(46, 156, 31, 0.4)), url(/PROJECT/IMG/Captur1.PNG);
+background-size: cover;
+}
+.cool-class::after{
+	content:'' ;
+	position: absolute;
+z-index: -1;
+
+}
+/* grain-bar  */
+
