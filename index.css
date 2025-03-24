@@ -61,7 +61,7 @@ a {
 #header .nav-list ul {
   list-style: none;
   position: absolute;
-  background-color:black;
+  background-color: black;
   width: 100vw;
   height: 100vh;
   left: 100%;
@@ -94,7 +94,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  color: rgba(240, 248, 255, 0.021);
+  color: rgba(37, 236, 30, 0.116);
   font-size: 13rem;
   letter-spacing: 50px;
   z-index: -1;
@@ -257,18 +257,126 @@ a {
 
 .cool-class {
   position: relative;
-  z-index: 1;
   width: 100%;
   margin-top: 4rem;
   margin: 37px 62px;
   height: 100%;
   padding: 5px;
-  background-image: url(/PROJECT/IMG/bg\ img.jpg);
+  background-image: linear-gradient(
+      rgba(240, 43, 21, 0.3),
+      rgba(23, 443, 33, 0.3)
+    ),
+    url(/PROJECT/IMG/bg\ img.jpg);
   background-size: cover;
 }
-.cool-class::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
+
+.select h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  margin-left: 4rem;
+  text-transform: uppercase;
 }
-/* grain-bar  */
+.select p {
+  margin-top: 0;
+  font-size: 2rem;
+  margin-left: 4rem;
+}
+.select h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 4rem 6rem;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  margin: 4rem 3rem ;
+  margin-right: 1rem;
+  font-size: 2rem;
+  /* flex-basis: 30%; */
+  font-weight: 300px;
+}
+.col-1 a {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+  border-radius: 2rem;
+  border: 2rem solid rgb(180, 120, 40);
+}
+.col-1 a:hover {
+  transition: 0.5s ease-in-out;
+  background-color: rgba(240, 43, 21, 0.3);
+  color: greenyellow;
+}
+.col-2 {
+  margin-top: 4rem;
+  margin: left 3px;
+  /* display: inline; */
+  flex-basis:35%;
+  font-size: 2rem;
+  font-weight: 300px;
+}
+.col-2 i {
+  justify-content: space-between;
+  font-weight: 5rem;
+  scroll-behavior: smooth;
+  box-shadow: 2px 4px 6px black;
+}
+
+.col-2 .fa-google {
+  color: rgb(125, 125, 235);
+  border-radius: 50%;
+}
+
+.col-2 .fa-youtube {
+  color: rgb(125, 125, 235);
+  border-radius: 50%;
+}
+
+.col-2 i .fa-linkedin {
+  border-radius: 50% solid;
+}
+.col-2 i:hover {
+  color: rgb(126, 14, 126);
+  background-color: linear-gradient(
+    rgba(15, 107, 143, 0.349),
+    rgb(142, 189, 12)
+  );
+  transform: scale(0.6);
+  transition: 0.2s ease-in;
+}
+@media (min-width: 768px) {
+  .select h1 {
+    font-size: 4rem;
+    color: whitesmoke;
+    font-weight: bolder;
+  }
+  .select h3 {
+    font-size: 2rem;
+    margin: 4rem 6rem;
+  }
+  .select p {
+    margin-top: 0;
+    font-size: 2.3rem;
+  }
+  .col-1 {
+
+    flex-basis: 30%;
+    margin: 4rem 3rem;
+    font-size: 3rem;
+  }
+
+  .col-2 i {
+    font-weight: 5rem;
+    scroll-behavior: smooth;
+    font-size: 3rem;
+    margin-left: 1rem;
+  }
+  .col-2 .fab{
+   flex-basis:60%;
+   margin-left:0rem;
+  }
+}
