@@ -26,7 +26,7 @@ a {
   justify-content: center;
 }
 .brand h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: uppercase;
   color: white;
 }
@@ -216,7 +216,8 @@ a {
   display: inline-block;
   height: 6rem;
   border-color: aqua;
-  width: 40rem;
+  width: 22rem;
+margin-right: 5px;
 }
 
 .form-control:hover {
@@ -289,94 +290,48 @@ a {
 .row {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   flex-wrap: wrap;
 }
+  
+.row::after{
+  content: "";
+  clear: both;
+  display: block;
+}
 
-.col-1 {
-  margin: 4rem 3rem ;
-  margin-right: 1rem;
+.col-1{
+  float: left;
+  padding: 3px;
+  border-radius: 1rem ;
+  border: 5px;
+  width:8.%;
+  margin: 2rem 4rem;
+}
+.col-1{
+  flex-basis: 30%;
+  text-align: center;
+  border: 2rem solid ;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.col-1 a{
+  font-weight: 2rem;
   font-size: 2rem;
-  /* flex-basis: 30%; */
-  font-weight: 300px;
+  color: black;
 }
-.col-1 a {
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-  color: white;
-  border-radius: 2rem;
-  border: 2rem solid rgb(180, 120, 40);
-}
-.col-1 a:hover {
-  transition: 0.5s ease-in-out;
-  background-color: rgba(240, 43, 21, 0.3);
-  color: greenyellow;
-}
-.col-2 {
-  margin-top: 4rem;
-  margin: left 3px;
-  /* display: inline; */
-  flex-basis:35%;
-  font-size: 2rem;
-  font-weight: 300px;
-}
-.col-2 i {
-  justify-content: space-between;
-  font-weight: 5rem;
-  scroll-behavior: smooth;
-  box-shadow: 2px 4px 6px black;
+.col-1:hover{
+  color: #e0f780;
+  background-color: #99bb20;
 }
 
-.col-2 .fa-google {
-  color: rgb(125, 125, 235);
-  border-radius: 50%;
+.col-2{
+  width: 06%;
+  flex-basis: 30%;
+  float: left;
 }
-
-.col-2 .fa-youtube {
-  color: rgb(125, 125, 235);
-  border-radius: 50%;
-}
-
-.col-2 i .fa-linkedin {
-  border-radius: 50% solid;
-}
-.col-2 i:hover {
-  color: rgb(126, 14, 126);
-  background-color: linear-gradient(
-    rgba(15, 107, 143, 0.349),
-    rgb(142, 189, 12)
-  );
-  transform: scale(0.6);
-  transition: 0.2s ease-in;
-}
-@media (min-width: 768px) {
-  .select h1 {
-    font-size: 4rem;
-    color: whitesmoke;
-    font-weight: bolder;
-  }
-  .select h3 {
-    font-size: 2rem;
-    margin: 4rem 6rem;
-  }
-  .select p {
-    margin-top: 0;
-    font-size: 2.3rem;
-  }
-  .col-1 {
-
-    flex-basis: 30%;
-    margin: 4rem 3rem;
-    font-size: 3rem;
-  }
-
-  .col-2 i {
-    font-weight: 5rem;
-    scroll-behavior: smooth;
-    font-size: 3rem;
-    margin-left: 1rem;
-  }
-  .col-2 .fab{
-   flex-basis:60%;
-   margin-left:0rem;
-  }
+.col-2 ul li{
+  text-decoration: none;
+font-size: 15px;
+  display: inline;
 }
